@@ -1,0 +1,17 @@
+.container-gallery{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns : 1fr 1fr;
+    $gap :25px;
+    gap:$gap;
+    padding:$gap;
+    margin-bottom: 2em;
+    .container-pic {
+        .pic{
+            width: 100%;
+            height: auto;
+            border-radius: 15px;
+        }
+    }
+
+}

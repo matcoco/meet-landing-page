@@ -1,0 +1,74 @@
+.container-header{
+    @include flex-col;
+    overflow-x: hidden;
+
+    .img-header{
+        width: 110%;
+        height: auto;
+    }
+
+    //groupe de boutons
+    .container-cta {
+        @include flex-col;  
+        text-align: center;
+        $margin_tb : 2em;
+        margin-top: $margin_tb;
+        margin-bottom: $margin_tb;
+        h1 {
+            font-family: $typo;
+            font-weight: 800;
+            font-size: 2.5em;
+            max-width: 80%;
+            color:$dark-blue;
+            padding-bottom: 30px;
+
+            span {
+                @include flex-col;
+            }
+        }
+
+        p {
+            width:80%;
+            //font-family: $typo;
+            color: $light-grey;
+            font-size: 1em;
+            line-height: 28px;
+            margin-bottom: 30px
+        }
+
+        .group-btn{
+            @include flex-col;
+
+            .btn{
+                color : $white;
+                border: none;
+                font-weight: bold;
+                border-radius: 50px;
+                font-size: 1em;
+                padding: 1.2em 2.5em 1.2em 2.5em;
+                .version{
+                    color: $light-blue;
+                }
+            }
+           
+            .btn1 {
+                background-color: $blue;
+                margin-bottom: 15px;
+            }
+
+            .btn2 {
+                background-color: $violet;
+            }
+        }
+    }
+
+
+}
+
+@media (min-width:$min-mobile) and (max-width:$max-mobile){
+    .container-header {
+        .img-header-left, .img-header-right {
+            display: none;
+        }
+    }
+}

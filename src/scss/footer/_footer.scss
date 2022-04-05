@@ -1,0 +1,92 @@
+/* footer {
+    position:relative;
+    background: url("../../../public/assets/mobile/image-footer.jpg");
+    background-size: 375px auto;
+    background-position-y: 112px;
+    height: 540px;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding-bottom: 141px;
+    @include flex-col;
+
+    .container-content-footer{
+        h2 {
+            font-size: xx-large;
+            color: $white;
+        }
+        p{
+            color: $white;
+            padding: 2em;
+        }
+    
+        .btn{
+            color : $white;
+            border: none;
+            font-weight: bold;
+            border-radius: 50px;
+            font-size: 1em;
+            padding: 1.2em 2.5em 1.2em 2.5em;
+            background-color: $violet;
+            .version{
+                color: $light-violet;
+            }
+        }
+    }
+}
+ */
+
+ .container-footer {
+    width: 100%;
+    height: 474px;
+    background: url("../../../public/assets/mobile/image-footer.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    text-align: center;
+
+    .container-content-footer{
+        position: absolute;
+        top:50%;
+        bottom: 50%;
+        @include flex-col;
+        margin: 20px;
+        h2 {
+            font-size: xx-large;
+            color: $white;
+        }
+        p{
+            font-size: 1.09em;
+            font-weight: none;
+            color: $white;
+            padding: 1.5em;
+            line-height: 25px;
+        }
+    
+        .btn{
+            color : $white;
+            border: none;
+            font-weight: bold;
+            border-radius: 50px;
+            font-size: 1em;
+            padding: 1.2em 2.5em 1.2em 2.5em;
+            background-color: $violet;
+            .version{
+                color: $light-violet;
+            }
+        }
+    }
+}
+
+.container-footer:before {
+    background-color: $blue;
+    opacity: 0.9;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+
+
+
+

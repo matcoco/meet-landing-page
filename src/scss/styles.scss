@@ -1,0 +1,45 @@
+@import '_variables';
+@import '_mixins';
+@import '_globale';
+@import '_placeholders';
+@import './Nav/Nav';
+@import './header/header';
+@import './separation//separation';
+@import './gallery/gallery';
+@import './footer/footer';
+
+
+.main{
+    background-color: $white;
+}
+
+.section2{
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    
+    h3{
+        font-size: small;
+        color: $blue;
+        font-weight: 800;
+        letter-spacing: 5px;
+    }
+
+    .title-text1{
+        font-size: 2em;
+        font-weight: bold;
+        margin: 1em 0 1em 0;
+    }
+
+    .text1{
+        color: $light-grey;
+        padding: 0 0 1em 0;
+        line-height: 25px;
+    }
+}
+
+.s2{
+    position:relative;
+    margin-bottom: -60px;
+    z-index: 10;
+}
