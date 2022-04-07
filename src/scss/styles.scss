@@ -1,0 +1,108 @@
+@import '_variables';
+@import '_mixins';
+@import '_globale';
+@import '_placeholders';
+@import './Nav/Nav';
+@import './header/header';
+@import './separation//separation';
+@import './gallery/gallery';
+@import './footer/footer';
+
+
+.main{
+    background-color: $white;
+}
+
+.section2{
+    text-align: center;
+    width: 80%;
+    margin: auto;
+    
+    h3{
+        font-size: small;
+        color: $blue;
+        font-weight: 800;
+        letter-spacing: 5px;
+    }
+
+    .title-text1{
+        font-size: 2em;
+        font-weight: bold;
+        margin: 1em 0 1em 0;
+    }
+
+    .text1{
+        color: $light-grey;
+        padding: 0 0 1em 0;
+        line-height: 25px;
+    }
+}
+
+.s2{
+    position:relative;
+    margin-bottom: -60px;
+    z-index: 10;
+}
+
+@media screen and (min-width:$min-tablet) and (max-width:$max-tablet){
+
+    .section2{
+        text-align: center;
+        width: 80%;
+        margin: auto;
+        
+        h3{
+            font-size: small;
+            color: $blue;
+            font-weight: 800;
+            letter-spacing: 5px;
+        }
+    
+        .title-text1{
+            font-size: 2em;
+            font-weight: bold;
+            padding:0 4em 0 4em;
+        }
+    
+        .text1{
+            color: $light-grey;
+            padding:0 2em 2em 2em;
+            line-height: 25px;
+        }
+    }
+}
+
+
+@media screen and (min-width:$min-desktop){
+
+    .section2{
+        text-align: center;
+        margin: auto;
+        width: 100%;
+        h3{
+            font-size: small;
+            color: $blue;
+            font-weight: 800;
+            letter-spacing: 5px;
+        }
+    
+        .title-text1{
+            font-size: 2em;
+            font-weight: bold;
+            width:18%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 1em;
+            margin-bottom: 1em;
+        }
+    
+        .text1{
+            color: $light-grey;
+            padding:0 2em 2em 2em;
+            line-height: 25px;
+            margin: auto;
+            width:30%;
+        }
+    }
+}
+

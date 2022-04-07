@@ -1,0 +1,121 @@
+.container-footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 474px;
+    background: url("../../../public/assets/mobile/image-footer.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    text-align: center;
+
+    .container-content-footer{
+        position: absolute;
+        top:50%;
+        bottom: 50%;
+        @include flex-col;
+        margin: 20px;
+        h2 {
+            font-size: xx-large;
+            color: $white;
+        }
+        p{
+            font-size: 1.09em;
+            font-weight: none;
+            color: $white;
+            padding: 1.5em;
+            line-height: 25px;
+        }
+    
+        .btn{
+            width: auto;
+            color : $white;
+            border: none;
+            font-weight: bold;
+            border-radius: 50px;
+            font-size: 1em;
+            padding: 1.2em 2.5em 1.2em 2.5em;
+            background-color: $violet;
+            .version{
+                color: $light-violet-alt;
+            }
+        }
+
+        & .btn:hover {
+            background-color: $light-violet;
+        }
+    }
+}
+
+.container-footer:before {
+    background-color: $blue;
+    opacity: 0.9;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+}
+
+@media screen and (min-width:$min-tablet) and (max-width:$max-laptop){
+    .container-footer {
+        background: url("../../../public/assets/tablet/image-footer.jpg");
+        background-repeat: no-repeat;
+        height: 427px;
+    }
+
+    .container-content-footer{
+        h2 {
+            font-size: 3em!important;
+            width: 80%;
+        }
+        p{
+            width:80%;
+            font-size: 1.09em;
+            font-weight: none;
+            color: $white;
+            padding: 1.5em;
+            line-height: 25px;
+        }
+    }
+}
+
+
+@media screen and (min-width:$min-desktop){
+
+    .container-footer,
+    .container-content-footer{
+        position: relative!important;
+        top: 0!important;
+        display: flex!important;
+        flex-direction: row!important;
+        justify-content: space-around!important;
+    }
+
+    .container-footer {
+        justify-content: center;
+        background: url("../../../public/assets/desktop/image-footer.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 309px;
+    }
+
+    .container-content-footer{
+        h2 {
+            font-size: 3em!important;
+            width: 20%;
+        }
+        p{
+            width:25%;
+            text-align: start;
+            padding: 3em!important;
+           
+        }
+
+    }
+}
+
+
+
+
+
