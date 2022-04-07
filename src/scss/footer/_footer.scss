@@ -1,4 +1,6 @@
 .container-footer {
+    display: flex;
+    justify-content: center;
     width: 100%;
     height: 474px;
     background: url("../../../public/assets/mobile/image-footer.jpg");
@@ -35,13 +37,13 @@
             padding: 1.2em 2.5em 1.2em 2.5em;
             background-color: $violet;
             .version{
-                color: $light-violet;
+                color: $light-violet-alt;
             }
         }
 
-/*         & .btn1:hover{
+        & .btn:hover {
             background-color: $light-violet;
-        } */
+        }
     }
 }
 
@@ -55,7 +57,7 @@
     width: 100%;
 }
 
-@media screen and (min-width:$min-tablet) and (max-width:$max-tablet){
+@media screen and (min-width:$min-tablet) and (max-width:$max-laptop){
     .container-footer {
         background: url("../../../public/assets/tablet/image-footer.jpg");
         background-repeat: no-repeat;
